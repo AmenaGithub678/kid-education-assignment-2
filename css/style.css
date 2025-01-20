@@ -1,0 +1,136 @@
+/*   font-family: "Quicksand", serif; */
+
+/*   font-family: "Raleway", serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* shared style */
+:root{
+    --primary-color:rgba(17, 17, 17, 1);
+    --txt-color:rgba(255, 255, 255, 1);
+    --box-color:rgba(149, 178, 38, 1);
+    --icon3-color:rgba(234, 76, 137, 1);
+    --icon-color:rgba(59, 89, 152, 1);
+    --icon1-color:rgba(221, 75, 57, 1);
+}
+.display-flex{
+    display: flex;
+}
+.primary-color{
+    color:rgba(254, 163, 1, 1);
+}
+.secondary-color{
+    color: rgba(1, 172, 253, 1);
+}
+.third-color{
+    color:rgba(5, 212, 223, 1);
+}
+.fourth-color{
+    color:rgba(93, 88, 239, 1);
+}
+
+
+/* nav style start here */
+.navbar{
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.nav-logo{
+    justify-items: center;
+    align-items: center;
+    gap: 11px;
+    }
+.l-title{
+font-size: 2rem;
+line-height: 30px;
+font-weight: bold;
+font-family: "Quicksand", serif;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 30px;
+    font-size: 1.25rem;
+    font-family: "Quicksand", serif;
+}
+.btn{
+background: rgba(254, 163, 1, 1);
+color: var(--txt-color);
+border: none;
+outline: none;
+padding: 10px 60px;
+border-radius: 12px;
+font-family: "Quicksand", serif;
+font-weight: 600;
+font-size: 1.25rem;
+line-height: 30px;
+}
+/* banner section code start here */
+.banner-sec{
+justify-content: space-around;
+}
+.banner-left{
+   max-width: 640px;
+   margin-top: 122px;
+}
+.b-title{
+    font-size: 3.5rem;
+    line-height: 61px;
+    font-weight: bold;
+    font-family: "Quicksand", serif;}
+
+.txt{
+    color:rgba(254, 163, 1, 1);
+} 
+.txt-1{
+    color: var(--primary-color);
+}
+.txt-2{
+    color:rgba(1, 172, 253, 1)
+}
+.b-des{
+    font-family: "Quicksand", serif;
+    font-weight: 400;
+    font-size: 1.24rem;
+    color:var(--primary-color);
+    margin: 24px 0px;
+}
+.banner-btn{
+    font-family: "Quicksand", serif;
+    padding: 10px 47px;
+    background: var(--primary-color);
+    border: none;
+outline: none;
+font-family: "Quicksand", serif;
+color:var(--txt-color);
+border-radius: 12px;
+font-family: "Quicksand", serif;
+font-weight: 700;
+font-size: 1.25rem;
+}
+.banner-right{
+
+}
+.banner-right img{
+   width: 100%; 
+}
+
+@media screen and (max-width:576px){
+    .navbar, .nav-links{
+        flex-direction: column;    
+    }
+    .banner-sec{
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+    }
+}
