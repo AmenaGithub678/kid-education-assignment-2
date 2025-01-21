@@ -123,7 +123,7 @@ font-size: 1.25rem;
    width: 100%; 
 }
 main{
-    max-width: 1160px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -236,12 +236,135 @@ color: var(--txt-color);
 font-size: 1.5rem;
 line-height: 24px;
 }
+/* Our Story section css add here */
+.story-sec{
+background:
+linear-gradient( 
+    0deg,
+rgba(254, 163, 1, 0.3) ,
+rgba(255, 255, 255, 0.3)
+), 
+url(../image/assets/bg.png);
+background-repeat: no-repeat;
+background-size: cover;
+max-width: 1440px;
+padding-bottom: 100px;
+}
+.story-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+}
+.S-title{
+font-weight: bold;
+line-height: 57px;
+font-size: 2.8rem;
+font-family:"Quicksand",serif;
+}
+.story-cards{
+max-width: 1160px;
+margin: 80px auto;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(2, 1fr);
+}
+#S-card1{
+    max-width: 540px;
+    grid-row: span 3;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;  
+    margin-right: 19px;
+    background: white;
+    height: 630px;
+}
+.m-btn{
+    padding: 7px 18px;
+    background: var(--primary-color);
+    border: none;
+    outline: none;
+    color: var(--txt-color);
+    border-radius: 47px;
+    font-family: "Raleway", serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 28px;
+    position: relative;
+    margin-top: -34px;
+    margin-left: 114px;
+    margin-left: 29px;
+    top: -10px;
+}
+.s-card1-img img{
+width:100%;
+border-top-left-radius: 16px;
+border-top-right-radius: 16px;
+}
+.s-card1-title{
+    font-weight: bold;
+    line-height: 38px;
+    font-family: "Quicksand",serif;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    padding: 58px 38px 47px 38px;
+}
+.s-card1-des{
+   font-size: 1rem;
+   line-height: 28px;
+   font-weight: 500;
+   font-family: "Raleway",serif; 
+   color:rgba(102, 102, 102, 1);
+   padding: 0px 68px 34px 38px;
+}
 
+#S-card2, #S-card3, #S-card4, #S-card5{
+    max-width: 347px;
+    border-radius: 16px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 19px;
+    background: white;
+    height: 306px;
+}
+.s-card2-img img, .s-card3-img img, 
+.s-card4-img img, .s-card5-img img{
+width:100%;
+border-top-left-radius: 16px;
+border-top-right-radius: 16px;}
+.S-card h3{
+    font-size:1rem;
+    font-weight: bold;
+    font-family: "Quicksand",serif;
+    line-height: 28px;
+    color:var(--primary-color);
+    padding: 0px 38px 10px 38px;
+}
+.story-btn{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin: 0 auto;
+}
+.S-btn{
+    padding: 10px 47px;
+    background: var(--primary-color);
+    border: none;
+outline: none;
+color:var(--txt-color);
+border-radius: 12px;
+font-family: "Quicksand", serif;
+font-weight: 700;
+font-size: 1.25rem;
+}
 
-
+/* Responsive code start here */
 @media screen and (max-width:576px){
     .navbar, .nav-links{
         flex-direction: column;    
+    }
+    .nav-links, .nav-btn, .l-title{
+       display: none;  
     }
     .banner-sec{
         flex-direction: column-reverse;
@@ -253,6 +376,36 @@ line-height: 24px;
 
 .curriculum-cards{
     grid-template-columns: 1fr;
+}
+.story-sec{
+    margin-bottom: 20px;
+}
+#S-card1 {
+    display: none;
+}
+.story-cards {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 438px;
+    margin: 20px auto;
+}
+#S-card2, #S-card3, #S-card4, #S-card5 {
+    max-width: 200px;
+    border-radius: 16px;
+    margin-bottom: 19px;
+    background: white;
+    height: 269px;
+}
+.S-card h3 {
+    padding: 0px 4px 10px 8px;
+}
+.m-btn {
+    padding: 7px 9px;
+    font-size: 0.7rem;
+    line-height: 22px;
+    margin-top: -34px;
+    margin-left: 114px;
+    margin-left: 29px;
+    top: -14px;
 }
 
 }
