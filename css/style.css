@@ -122,6 +122,122 @@ font-size: 1.25rem;
 .banner-right img{
    width: 100%; 
 }
+main{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+/* standard curriculum section css start here */
+.curriculum-sec{
+background: url(../image/assets/bg.png);
+background-repeat: no-repeat;
+background-size:contain;
+background-position:center ;
+}
+.curriculum-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+}
+.C-title{
+font-size: 2.87rem;
+line-height: 57px;
+font-weight: bold;
+font-family:"Quicksand", serif;
+color:var(--primary-color)
+}
+.curriculum-cards{
+max-width: 1160px;
+margin: 0px auto;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap:28px;
+align-items: center;
+justify-items: center;
+text-align: center;
+}
+.C-card{
+margin-top: 80px;
+width: 367px;
+border-radius: 18px;
+box-shadow: inset 0 0 28px rgba(0, 0, 0, 0.05);
+}
+#card-1{
+border: 1px solid rgba(222, 245, 255, 1);
+background: linear-gradient(to bottom, #DEF5FF, #FFFFFF);
+}
+#card-2{
+ border: 1px solid rgba(255, 244, 220, 1);
+ background: linear-gradient(to bottom, #FFF4DC, #FFFFFF);   
+}
+#card-3{
+   border: 1px solid rgba(242, 232, 255, 1);
+   background: linear-gradient(to bottom, #EEE1FF, #FFFFFF); 
+}
+.card-img{
+    padding: 52px 0px 32px 0px;
+}
+.card-title{
+font-size: 1.5rem;
+font-family: "Quicksand", serif;
+line-height: 30px;
+font-weight: bold;
+color: var(--primary-color);
+
+text-align: center;
+}
+.card-des{
+font-size: 1rem;
+font-weight: 500;
+font-family: "Raleway", serif;
+line-height: 28px;
+padding: 33px 31px;
+text-align: center;
+}
+.r-more{
+    margin-bottom: 58px;
+}
+.card-more{
+    color: rgba(1, 172, 253, 1);
+    margin-bottom: 58px;
+} 
+.card-more1{
+    color:rgba(254, 163, 1, 1);
+    margin-bottom: 58px;
+} 
+.card-more2{
+    color:rgba(93, 88, 239, 1);
+    margin-bottom: 58px;
+}
+.card-button{
+    gap:10px;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 80px auto;
+        width: 130px;
+        height: 60px;
+    }
+.circle1, .circle2{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+   background: rgba(254, 163, 1, 1);
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+.circle1 i, .circle2 i{
+color: var(--txt-color);
+font-size: 1.5rem;
+line-height: 24px;
+}
+
+
 
 @media screen and (max-width:576px){
     .navbar, .nav-links{
@@ -133,4 +249,10 @@ font-size: 1.25rem;
         justify-items: center;
         align-items: center;
     }
+    /* banner section end here */
+
+.curriculum-cards{
+    grid-template-columns: 1fr;
+}
+
 }
