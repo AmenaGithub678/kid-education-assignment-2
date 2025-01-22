@@ -77,6 +77,17 @@ font-weight: 600;
 font-size: 1.25rem;
 line-height: 30px;
 }
+.btn:hover {
+    background: var(--icon-color);
+    transform: scale(1.1);
+    transition: 1s;
+}
+.nav-link:hover{
+    color: var(--icon3-color);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 .menu-btn {
     top: 14px;
     position: relative;
@@ -125,6 +136,11 @@ font-family: "Quicksand", serif;
 font-weight: 700;
 font-size: 1.25rem;
 }
+.banner-btn:hover{
+    background: rgba(1, 172, 253, 1);
+    transform: scale(1.1);
+    transition: 1s;
+}
 
 .banner-right img{
    width: 100%; 
@@ -140,6 +156,7 @@ background: url(../image/assets/bg.png);
 background-repeat: no-repeat;
 background-size:contain;
 background-position:center ;
+
 }
 .curriculum-title{
     display: flex;
@@ -192,7 +209,6 @@ font-family: "Quicksand", serif;
 line-height: 30px;
 font-weight: bold;
 color: var(--primary-color);
-
 text-align: center;
 }
 .card-des{
@@ -256,6 +272,7 @@ background-repeat: no-repeat;
 background-size: cover;
 max-width: 1440px;
 padding-bottom: 100px;
+
 }
 .story-title{
     display: flex;
@@ -306,8 +323,18 @@ grid-template-rows: repeat(2, 1fr);
 #m-btn1{
     background: rgba(60, 216, 232, 1);
 }
+#m-btn1:hover{
+ background: rgba(254, 163, 1, 1);
+ transition: 1s;
+ transform: scale(1.1);  
+}
 #m-btn2{
     background: rgba(149, 178, 38, 1); 
+}
+#m-btn2:hover{
+    background: rgba(93, 88, 239, 1);
+    transition: 1s;
+    transform: scale(1.1);
 }
 .s-card1-img img{
 width:100%;
@@ -330,7 +357,6 @@ border-top-right-radius: 16px;
    color:rgba(102, 102, 102, 1);
    padding: 0px 68px 34px 38px;
 }
-
 #S-card2, #S-card3, #S-card4, #S-card5{
     max-width: 347px;
     border-radius: 16px;
@@ -370,16 +396,23 @@ font-family: "Quicksand", serif;
 font-weight: 700;
 font-size: 1.25rem;
 }
+.S-btn:hover{
+    background: rgba(254, 163, 1, 1);
+    transition: 1s;
+    transform: scale(1.1); 
+}
 /* footer section code start here */
 .footer-sec{
     background: rgba(1, 172, 253, 1);
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .f-body{
    max-width: 1079px;
    margin: 0 auto;
    gap: 170px;
    padding-top: 127px;
-   padding-bottom:174px ;
+   padding-bottom:110px ;
    display: grid;
    grid-template-columns: repeat(3,1fr);
 }
@@ -404,9 +437,10 @@ max-width: 399px;
 .m-footer ul li{
     list-style: none;
 }
-.m-f-title, .m-footer ul li, .r-f-title{
+.m-f-title, .m-footer ul li, .r-f-title, .f-copywrite{
 color: var(--txt-color);
 font-family: "Quicksand",serif;
+
 }
 .m-f-title{
 font-weight: bold;
@@ -418,14 +452,22 @@ margin-bottom:32px;
     font-size: 1.25rem;
     margin-bottom:20px;
 }
-.r-footer{
-
-}
 .r-f-title{
  font-weight: bold;
  line-height: 26px;
  font-size: 1.6rem;
  margin-bottom: 32px;
+}
+.f-copywrite{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  padding-bottom: 80px;
+  margin: 0 auto;
+}
+.f-copywrite p{
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 /* Responsive code start here */
 @media screen and (max-width:576px){
@@ -436,7 +478,7 @@ margin-bottom:32px;
             top: -38px;
             position: relative;
             text-align: end;
-            right: 0px;
+            right: 31px;
         display: block !important;
       
     }
@@ -463,8 +505,15 @@ margin-bottom:32px;
         padding: 8px 24px;
         font-size: 1rem;
     }
-    /* banner section end here */
 
+
+    /* banner section end here */
+.curriculum-title{
+    overflow-x: hidden; 
+}
+.story-title{
+    overflow-x: hidden;
+}
 .curriculum-cards{
     grid-template-columns: 1fr;
 }
@@ -489,7 +538,7 @@ margin-bottom:32px;
 }
 .story-cards {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 400px;
+    max-width: 358px;
     margin: 20px auto;
     gap: 11px;
 }
@@ -500,8 +549,6 @@ margin-bottom:32px;
     background: white;
     height: 230px;
 }
-
-
 .S-card h3 {
     padding: 0px 4px 10px 8px;
     font-size: 12px;
