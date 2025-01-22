@@ -33,6 +33,10 @@
 
 
 /* nav style start here */
+.line{
+    border: 1px solid rgba(254, 163, 1, 1);
+    display: none;
+}
 .navbar{
     justify-content: space-around;
     margin: 20px auto;
@@ -73,6 +77,13 @@ font-weight: 600;
 font-size: 1.25rem;
 line-height: 30px;
 }
+.menu-btn {
+    top: 14px;
+    position: relative;
+    text-align: end;
+    right: 135px;
+    display: none;
+}
 /* banner section code start here */
 .banner-sec{
 justify-content: space-around;
@@ -104,21 +115,17 @@ justify-content: space-around;
     margin: 24px 0px;
 }
 .banner-btn{
-    font-family: "Quicksand", serif;
-    padding: 10px 47px;
-    background: var(--primary-color);
-    border: none;
+padding: 10px 47px;
+background: var(--primary-color);
+border: none;
 outline: none;
-font-family: "Quicksand", serif;
 color:var(--txt-color);
 border-radius: 12px;
 font-family: "Quicksand", serif;
 font-weight: 700;
 font-size: 1.25rem;
 }
-.banner-right{
 
-}
 .banner-right img{
    width: 100%; 
 }
@@ -160,7 +167,7 @@ text-align: center;
 }
 .C-card{
 margin-top: 80px;
-width: 367px;
+max-width: 367px;
 border-radius: 18px;
 box-shadow: inset 0 0 28px rgba(0, 0, 0, 0.05);
 }
@@ -280,7 +287,7 @@ grid-template-rows: repeat(2, 1fr);
     height: 630px;
 }
 .m-btn{
-    padding: 7px 18px;
+    padding: 6px 18px;
     background: var(--primary-color);
     border: none;
     outline: none;
@@ -295,6 +302,12 @@ grid-template-rows: repeat(2, 1fr);
     margin-left: 114px;
     margin-left: 29px;
     top: -10px;
+}
+#m-btn1{
+    background: rgba(60, 216, 232, 1);
+}
+#m-btn2{
+    background: rgba(149, 178, 38, 1); 
 }
 .s-card1-img img{
 width:100%;
@@ -337,7 +350,7 @@ border-top-right-radius: 16px;}
     font-family: "Quicksand",serif;
     line-height: 28px;
     color:var(--primary-color);
-    padding: 0px 38px 10px 38px;
+    padding: 0px 0px 10px 38px;
 }
 .story-btn{
 display: flex;
@@ -357,55 +370,161 @@ font-family: "Quicksand", serif;
 font-weight: 700;
 font-size: 1.25rem;
 }
+/* footer section code start here */
+.footer-sec{
+    background: rgba(1, 172, 253, 1);
+}
+.f-body{
+   max-width: 1079px;
+   margin: 0 auto;
+   gap: 170px;
+   padding-top: 127px;
+   padding-bottom:174px ;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+}
+.l-footer{
+max-width: 399px;
+}
+.f-img span{
+    font-family: "Quicksand",serif;
+    font-weight: bold;
+    line-height: 39px;
+    font-size: 2.6rem;
+    color: var(--txt-color);
+}
+.l-f-des{
+    margin-top: 35px;
+    width: 392px;
+    color: var(--txt-color);
+    font-size: 1.25rem;
+    font-family: "Quicksand",serif;
+}
 
+.m-footer ul li{
+    list-style: none;
+}
+.m-f-title, .m-footer ul li, .r-f-title{
+color: var(--txt-color);
+font-family: "Quicksand",serif;
+}
+.m-f-title{
+font-weight: bold;
+font-size: 1.5rem;
+margin-bottom:32px;
+}
+.m-footer ul li{
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-bottom:20px;
+}
+.r-footer{
+
+}
+.r-f-title{
+ font-weight: bold;
+ line-height: 26px;
+ font-size: 1.6rem;
+ margin-bottom: 32px;
+}
 /* Responsive code start here */
 @media screen and (max-width:576px){
+    .line{
+        display: block;
+    }
+    .menu-btn {
+            top: -38px;
+            position: relative;
+            text-align: end;
+            right: 0px;
+        display: block !important;
+      
+    }
     .navbar, .nav-links{
         flex-direction: column;    
     }
-    .nav-links, .nav-btn, .l-title{
+    .nav-links, .nav-btn, .l-title, .card-button{
        display: none;  
     }
+    .banner-left {
+        margin-top: 30px;
+    }
+    .b-title {
+        font-size: 2rem;}
+    .b-des {
+      font-size: 1rem;}
     .banner-sec{
         flex-direction: column-reverse;
         text-align: center;
         justify-items: center;
         align-items: center;
     }
+    .banner-btn {
+        padding: 8px 24px;
+        font-size: 1rem;
+    }
     /* banner section end here */
 
 .curriculum-cards{
     grid-template-columns: 1fr;
 }
-.story-sec{
-    margin-bottom: 20px;
+.C-title {
+    font-size: 1.6rem;}
+ .curriculum-title {
+     margin-top: 40px;
+             }
+ .C-card {
+  margin-top: 20px;
+  max-width: 300px;}
+  .card-title {
+    font-size: 1rem;}
+  .card-des {
+    font-size: 0.65rem;
+    padding: 25px 17px;
 }
+/* Our stories */
+
 #S-card1 {
     display: none;
 }
 .story-cards {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 438px;
+    max-width: 400px;
     margin: 20px auto;
+    gap: 11px;
 }
 #S-card2, #S-card3, #S-card4, #S-card5 {
-    max-width: 200px;
+    max-width: 173px;
     border-radius: 16px;
     margin-bottom: 19px;
     background: white;
-    height: 269px;
+    height: 230px;
 }
+
+
 .S-card h3 {
     padding: 0px 4px 10px 8px;
+    font-size: 12px;
 }
 .m-btn {
-    padding: 7px 9px;
+    padding: 5px 9px;
     font-size: 0.7rem;
     line-height: 22px;
     margin-top: -34px;
-    margin-left: 114px;
-    margin-left: 29px;
+    margin-left: 8px;
     top: -14px;
+}
+.f-body{
+padding-top: 65px;
+grid-template-columns: 1fr;
+padding-left: 14px;
+gap:32px;
+padding-bottom: 60px;
+}
+.l-f-des { 
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 18px;
 }
 
 }
